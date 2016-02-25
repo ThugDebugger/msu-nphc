@@ -47,19 +47,19 @@
   "dependencies": {
     "better-npm-run": "0.0.7",
     "dotenv": "^2.0.0",
-    "eslint": "^2.2.0",
-    "eslint-plugin-babel": "^3.1.0",
-    "eslint-plugin-react": "^4.0.0",
-    "precss": "^1.4.0",
-    "universal-redux": "3.0.0"
+    "universal-redux": "3.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^5.0.0",
-    "concurrently": "1.0.0",
+    "concurrently": "2.0.0",
     "eslint": "^2.2.0",
-    "react": "^0.14.6",
-    "react-dom": "^0.14.6",
-    "react-redux": "4.3.0",
+    "eslint-plugin-babel": "^3.1.0",
+    "eslint-plugin-react": "^4.1.0",
+    "lost": "^6.7.2",
+    "precss": "^1.4.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-redux": "4.4.0",
     "react-router": "2.0.0",
     "react-router-redux": "3.0.0"
   }

@@ -1,7 +1,5 @@
 /* eslint-disable */
 require('dotenv').config({silent: true});
-const autoprefixer = require('autoprefixer');
-const precss = require('precss');
 const path = require('path');
 const isProduction = process.env.NODE_ENV === 'production';
 const projectRoot = path.resolve(__dirname, '..');
@@ -211,8 +209,12 @@ module.exports = {
         extensions: [ '.scss', '.css' ]
       },
 
+      module: {
+        loaders: [{ test: /\.css$/, loader: 'postcss' }]
+      },
+
       postcss: function () {
-        return [autoprefixer, precss];
+        return [require('autoprefixer'), require('precss')];
       }
     }
   }
