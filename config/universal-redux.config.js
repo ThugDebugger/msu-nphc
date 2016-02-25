@@ -214,7 +214,7 @@ module.exports = {
       },
 
       postcss: function () {
-        return [require('autoprefixer'), require('precss')];
+        return [require('lost'), require('autoprefixer'), require('precss')];
       }
     }
   }
