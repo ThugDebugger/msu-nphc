@@ -162,7 +162,7 @@ module.exports = {
     //
     // Expects: String
     */
-    // head: sourceRoot + '/containers/Head/Head.js',
+    head: sourceRoot + '/containers/Head/Head.js',
 
     /*
     // A path to a component that provides the root html shell. It is strongly

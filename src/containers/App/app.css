@@ -13,3 +13,8 @@ html, body, #app {
     height: 100%;
   }
 }
+
+.container {
+  lost-center: 1920px;
+  width: 100%;
+}
