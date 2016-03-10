@@ -1,0 +1,17 @@
+#info{
+    lost-column: 1/2 0;
+    background: grey;
+    margin-left: 1%;
+}
+
+
+
+
+.container p { 
+  display: table;
+  margin:0 auto;
+  display: inline-block; 
+  zoom: 1; 
+  *display: inline; 
+}
+

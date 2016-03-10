@@ -1,0 +1,67 @@
+{
+  "name": "msu-nphc",
+  "version": "0.0.1",
+  "description": "Web application for MSU NPHC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwbutler/msu-nphc.git"
+  },
+  "scripts": {
+    "build": "universal-redux-build",
+    "start": "better-npm-run start",
+    "dev-server": "better-npm-run dev-server",
+    "dev": "concurrent --kill-others \"npm run watch-client\" \"npm run dev-server\"",
+    "watch-client": "better-npm-run watch-client"
+  },
+  "betterScripts": {
+    "start": {
+      "command": "universal-redux-server",
+      "env": {
+        "NODE_PATH": "./src",
+        "NODE_ENV": "production"
+      }
+    },
+    "dev-server": {
+      "command": "universal-redux-server",
+      "env": {
+        "NODE_PATH": "./src",
+        "NODE_ENV": "development"
+      }
+    },
+    "build": {
+      "command": "universal-redux-build",
+      "env": {
+        "NODE_PATH": "./src",
+        "NODE_ENV": "production"
+      }
+    },
+    "watch-client": {
+      "command": "universal-redux-watch",
+      "env": {
+        "NODE_PATH": "./src",
+        "UV_THREADPOOL_SIZE": 100
+      }
+    }
+  },
+  "license": "MIT",
+  "dependencies": {
+    "better-npm-run": "0.0.7",
+    "dotenv": "^2.0.0",
+    "universal-redux": "3.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^5.0.0",
+    "concurrently": "2.0.0",
+    "eslint": "^2.2.0",
+    "eslint-plugin-babel": "^3.1.0",
+    "eslint-plugin-react": "^4.1.0",
+    "lost": "^6.7.2",
+    "precss": "^1.4.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-redux": "4.4.0",
+    "react-router": "2.0.0",
+    "react-router-redux": "3.0.0",
+    "react-slick": "^0.10.0"
+  }
+}

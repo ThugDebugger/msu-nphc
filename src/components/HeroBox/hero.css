@@ -1,0 +1,8 @@
+#Hero{
+    lost-center: 980px;   
+}
+
+#Hero img{
+    lost-column: 1 0;
+    margin: 2%;
+}
