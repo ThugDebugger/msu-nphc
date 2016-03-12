@@ -30,9 +30,12 @@ export default React.createClass({
             </Slider>
             
             <HeroBox />
-            <Info />
-            
+            <Info mrprop = "left1" />
+            <Info mrprop = "right1" />
+            <Info mrprop = "left2" />
+            <Info mrprop = "right2" />
             <div id="organizations">
+              <img src="http://placehold.it/350x150" />
               <img src="http://placehold.it/350x150" />
               <img src="http://placehold.it/350x150" />
               <img src="http://placehold.it/350x150" />
